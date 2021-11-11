@@ -159,12 +159,12 @@
     B, K, C, A, F, T, Q, L
     B, K, C, A, F    T, Q
     SV : C           SV: Q
-    B, A  K, F       T
+    B, A  K, F           T
     SV:A  SV: F
-       B     K         T, Q
-    A, B,    F, K        T, Q
-    A, B, C, F, K        T, Q
-    A, B, C, D, F, K, L, T, Q
+       B     K         Q, T
+    A, B,    F, K        Q, T
+    A, B, C, F, K        Q, T
+    A, B, C, D, F, K, L, Q, T
 
 
     
