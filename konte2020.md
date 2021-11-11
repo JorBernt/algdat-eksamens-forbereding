@@ -1,7 +1,8 @@
 # Oppgave 1
 
-![img.png](img.png)
-
+<p align="center">
+    <img src="img.png" style="width: auto;" alt="">
+</p>
 ## 1. Forklar hva en rekursiv funksjon er.
 
 
@@ -108,7 +109,9 @@
 | 2 | 4 | 2 | 2 | 1 | 2 | 2 |
 
 ### 2. Lag en tegning av Huffmantreet
-![img_1.png](img_1.png)
+<p align="center">
+    <img src="img_1.png" style="width: auto;" alt="">
+</p>
 
 ### 3. Og skriv opp Huffmankoden for hver bokstav
 
