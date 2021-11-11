@@ -133,7 +133,7 @@
     
     41 bits
 
-#3. QuickSort
+# 3. QuickSort
 
     I denne oppgaven skal du sortere et sett med verdier med Quicksort. 
     I denne oppgavenbruker vi arrayetchar[] values = {'B', 'K', 'C', 'A', 'L', 'F', 'T', 'Q'};
