@@ -166,5 +166,77 @@
     A, B, C, F, K        Q, T
     A, B, C, D, F, K, L, Q, T
 
+## 2. Algoritmeanalyse av quicksort
 
-    
+### 1. Forklar hva beste, gjennomsnittlig og verste tilfelle betyr når man snakker omkompleksiteten til en algoritme.
+
+    Beste tilfelle er hvor algoritmen er så effektiv som mulig. For eksempel for bubble sort, om kun de to siste tallene
+    er usortert, så går man bare gjennom listen en gang, og gjør en swap. Da er den O(n).
+    Ved å kjøre algoritmen på en stor mengde varierende lister, med forskjellige innhold og størrelse, og tar 
+    gjennomsnittet av dette, så finner vi den gjennomsnittlige kompleksiteten.
+    Verste tilfelle er hvor algoritmen må gjøre sine heuristikker flest mulig ganger før listen er sortert.
+    Som i bubble sort, om listen er omvendt sortert, så må algoritmen gå over alle tall for å flytte de til "topp".
+
+### 2. Forklar hvorfor Quicksort i gjennomsnittstilfellet har kompleksiteten O(n log(n) )og i  verste tilfellet har kompleksiteten O(n2)
+
+    Quicksort vil gjennomsnittlig dele hver partisjon i to i ca. like stor lengde, også kjøre algoritmen rekursivt på partisjonene,
+    så vil antall ganger arrayet må deles være tallets base-2 logaritme. Så da vil vi ha log(n) partisjonsnivå,
+    og får hvert nivå må gå gjennom N mengde input. Derfor O(n log n)
+
+    I verste tilfelle velges det minste eller høyeste tallet som pivot for hvert nivå, og partisjonen vil deles opp
+    i pivot, og resten i partisjon i størrelse n-1. Om dette skjer for hver eneste partisjon, vil vi ha N partisjoner
+    for N nivåer, og derfor blir det log(N*N) -> log(N^2)
+
+
+# 4. Dobbelt lenket liste
+
+## 1.  Lag en tegning som viser hvordan du fjerner en node fra en dobbelt lenket liste ogbeskriv med ord hvordan du går frem
+//TODO
+
+## 2. Kopier funksjonen void remove(int index), og skriv innholdet i funksjonen der det ermarkert. Funksjonen skal fjerne noden på plass index.
+
+```java    
+    void remove(int index) {
+        if (index == 0) {
+            removeFirst();
+        } else if (index == size - 1) {
+            removeLast();
+        } else {// Din kode her}}void remove(char value) {// Din kode her}}
+            boolean b = index < size / 2;
+            Node current = b ? head : tail;
+            for(int i = 0; i < index; i++) {
+                current = b ? current.next : current.prev;
+            }
+            current.prev.next = current.next;
+            current.next.prev = current.prev;
+            current.next = null;
+            current.prev = null;
+        }
+    }
+```
+
+## 3. Kopier funksjonen void remove(char value), og skriv innholdet i funksjonen der det ermarkert. Funksjonen skal fjerne den første noden som har verdi «value».
+
+```java
+    void remove(char value) {
+        Node current = head;
+        while (current != null) {
+            if(current.value == value) {
+                current.prev.next = current.next;
+                current.next.prev = current.prev;
+                current.next = null;
+                current.prev = null;
+            }
+            current = current.next;
+        }
+    }
+```
+
+# 5. Minimumsheap
+
+### 1. Hva er en minimumsheap, og hvilke krav stilles for at det skal kunne kalles enminimumsheap?
+
+    Et minimumsheap er en datastruktur som er bygd opp som et binærtre. Det krever at det er 
+    et komplett minimums tre, hvor hver indre node har en verdi mindre eller lik dens barnenoder.
+
+### 2. 

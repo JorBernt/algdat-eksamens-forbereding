@@ -1,3 +1,4 @@
+public class mergeSort {
     public static void mergeSort(int[] a) {
         int[] b = new int[a.length / 2];    // en hjelpetabell for flettingen
         mergeSort(a, b, 0, a.length);  // kaller metoden over
@@ -20,3 +21,5 @@
             a[k++] = b[i] < a[j] ? b[i++] : a[j++]; //Fletter inn elementene fra a og b, velger den minste av de for hver indeks.
         while (i < elementsInLeftArray) a[k++] = b[i++]; //Legger til evt. resterende del av array b.
     }
+
+}
