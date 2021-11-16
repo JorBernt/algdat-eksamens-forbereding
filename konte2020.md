@@ -154,17 +154,9 @@
 
 ### 3. Lag en tegning som stegvis viser hvordan quicksort sorterer arrayet over. Når duskal partisjonere skal du bruke den midterste verdien. 
 
-    B, K, C, A, L, F, T, Q
-    Velger L som skilleverdi
-    B, K, C, A, F, T, Q, L
-    B, K, C, A, F    T, Q
-    SV : C           SV: Q
-    B, A  K, F           T
-    SV:A  SV: F
-       B     K         Q, T
-    A, B,    F, K        Q, T
-    A, B, C, F, K        Q, T
-    A, B, C, D, F, K, L, Q, T
+<p align="center">
+    <img src="img_2.png" style="width: auto;" alt="">
+</p>
 
 ## 2. Algoritmeanalyse av quicksort
 
