@@ -193,16 +193,25 @@
             removeFirst();
         } else if (index == size - 1) {
             removeLast();
-        } else {// Din kode her}}void remove(char value) {// Din kode her}}
-            boolean b = index < size / 2;
-            Node current = b ? head : tail;
-            for(int i = 0; i < index; i++) {
-                current = b ? current.next : current.prev;
+        } else {
+            if(index < size / 2) {
+                Node current = head;
+                for(int i = 0; i < index; i++) {
+                    current = current.next;
+                }
             }
+            else {
+                Node current = tail;
+                for(int i = size -1; i > index; i--) {
+                    current = current.prev;
+                }
+            }
+            
             current.prev.next = current.next;
             current.next.prev = current.prev;
             current.next = null;
             current.prev = null;
+            size--;
         }
     }
 ```
@@ -218,7 +227,8 @@
                 current.next.prev = current.prev;
                 current.next = null;
                 current.prev = null;
-            }
+                size--;
+        }
             current = current.next;
         }
     }
@@ -231,5 +241,19 @@
     Et minimumsheap er en datastruktur som er bygd opp som et binærtre. Det krever at det er 
     et komplett minimums tre, hvor hver indre node har en verdi mindre eller lik dens barnenoder.
 
-### 2. 
+### 2. Start med en tom minimumsheap. Legg tallene 5, 9, 3, 2, 6, 6, 1 og tegn heapen forhvert tall du legger inn.
 
+<p align="center">
+    <img src="img_4.png" style="width: auto;" alt="">
+</p>
+
+### 3. Vi skal nå ta ut tre tall fra heapen. Ta ut ett og ett tall og tegn heapen for hvert tall dutar ut.
+
+<p align="center">
+    <img src="img_5.png" style="width: auto;" alt="">
+</p>
+
+### 4. Forklar hvordan en minimumsheap kan brukes til sortering uten å bruke ekstralagringsplass.
+    
+    En kan bruke node-id'ene til å lagre de i et array, også flytte på posisjonene internt.
+    
