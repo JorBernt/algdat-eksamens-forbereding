@@ -221,14 +221,23 @@
 ```java
     void remove(char value) {
         Node current = head;
-        while (current != null) {
+        while(current != null) {
             if(current.value == value) {
-                current.prev.next = current.next;
-                current.next.prev = current.prev;
-                current.next = null;
-                current.prev = null;
-                size--;
-        }
+                if(current == head) {
+                    removeFirst();
+                }
+                else if(current == tail) {
+                    removeLast();
+                }
+                else {
+                    current.prev.next = current.next;
+                    current.next.prev = current.prev;
+                    current.next = null;
+                    current.prev = null; //Hjelper JVM sin GC
+                    size--;
+                }
+                return;
+            }
             current = current.next;
         }
     }
