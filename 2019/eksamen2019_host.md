@@ -195,9 +195,14 @@ public static class DoubleLinkedList {
 
 ## 5. Binært søketre
 
-###a. 
+### a. 
     
     Det er et binætre hvor venstre og høyre subtre til en node ikke avviker med 
     mer en 1 i høyde. 
 
 
+### b.
+
+<p align="center">
+    <img src="img.png" style="width: auto;" alt="">
+</p>
