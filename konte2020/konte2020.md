@@ -27,7 +27,7 @@
 
 ### 2. Inorden
 
-    A, B, D, C, F, G, Q, H
+    A, B, D, C, F, G, H, Q
 
 ### 3. Postorden
 
