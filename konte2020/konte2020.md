@@ -117,13 +117,13 @@
 
 | I | N | T | E | R | C | O |
 |---|---|---|---|---|---|---|
-| 010 | 00 | 100 | 101 | 001 | 111 | 011 |
+| 011 | 11 | 101 | 010 | 000 | 001 | 100 |
 
 ## 2. Bruk så Huffmankodene til å komprimere ordet.
 
 ### 1. Skriv opp den kodede binære meldingen.
     
-    01000100101001111011000010111110001001100
+    0111110101000000110011110100110101110011
 
 ### 2. Hvor mange bit bruker den opprinnelige (ukodede) meldingen?
 
@@ -233,4 +233,3 @@
 
 ### 2. 
 
-    
