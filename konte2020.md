@@ -110,7 +110,7 @@
 
 ### 2. Lag en tegning av Huffmantreet
 <p align="center">
-    <img src="img_1.png" style="width: auto;" alt="">
+    <img src="img_3.png" style="width: auto;" alt="">
 </p>
 
 ### 3. Og skriv opp Huffmankoden for hver bokstav
@@ -232,3 +232,5 @@
     et komplett minimums tre, hvor hver indre node har en verdi mindre eller lik dens barnenoder.
 
 ### 2. 
+
+    
