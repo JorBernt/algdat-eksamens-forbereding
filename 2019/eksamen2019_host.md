@@ -206,3 +206,7 @@ public static class DoubleLinkedList {
 <p align="center">
     <img src="img.png" style="width: auto;" alt="">
 </p>
+
+<p align="center">
+    <img src="img_1.png" style="width: auto;" alt="">
+</p>
