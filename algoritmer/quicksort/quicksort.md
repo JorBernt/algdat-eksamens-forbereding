@@ -16,7 +16,7 @@ Space complexity: O(log(n))
 
 
 ## Hvordan den fungerer
-
+ 
     Quicksort bruker partisjonering for å sortere. Partisjonering er å velge en skilleverdi i et array, 
     og flytte alle verdier lavere enn skilleverdien til venstre, og høyere til høyre 
     (eller omvent om det skal sorteres synkende. 
@@ -31,15 +31,16 @@ Space complexity: O(log(n))
     quicksort(array, start, end) {
         if(start >= end) return // array er ferdig sortert, avslutt rekursjon
         
-        pivot = partition(array, start, end) // Partisjonerer arrayet, og returnerer indeks til pivotverdi
+        pivot = partition(array, start, (start + end) / 2, end) // Partisjonerer arrayet, og returnerer indeks til pivotverdi
 
         quicksort(array, start, mid - 1) //Rekursivt kaller med ny partisjon, start til skilleverdi
         quicksort(array, mid + 1, end) //Rekursivt kaller med ny partisjon, skilleverdi til slutten
     }
 
-    partition(array, start, end) {
-        pivot = array[end] // Velger siste verdi som skilleverdi (det er helt valgfritt hvilken indeks)
-        lastIndex = end
+    partition(array, start, mid, end) {
+        pivot = array[mid] // Velger siste verdi som skilleverdi (det er helt valgfritt hvilken indeks)
+        swap array[mid] and array[end]
+        lastIndex = end--
         while(start < end) {
             while(array[start] < pivot && start <= end) start++
             while(array[end] > pivot && end > start) end--
