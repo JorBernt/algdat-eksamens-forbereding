@@ -1,4 +1,6 @@
-public class mergeSort {
+package mergesort;
+
+public class MergeSort {
     public static void mergeSort(int[] a) {
         int[] b = new int[a.length / 2];    // en hjelpetabell for flettingen
         mergeSort(a, b, 0, a.length);  // kaller metoden over
