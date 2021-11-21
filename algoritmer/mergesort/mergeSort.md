@@ -45,4 +45,4 @@ Space complexity: O(n)
         copy a[from,mid) to b[0, elementsInLeftArray)
         loop through the elements and insert smallest element first into a
     }
-    
+
