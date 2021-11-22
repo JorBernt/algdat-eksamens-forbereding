@@ -3,6 +3,7 @@
 <p align="center">
     <img src="img.png" style="width: auto;" alt="">
 </p>
+
 ## 1. Forklar hva en rekursiv funksjon er.
 
 
