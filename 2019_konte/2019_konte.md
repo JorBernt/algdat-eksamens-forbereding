@@ -91,7 +91,7 @@ ii.
 ### a.
 
 <p align="center">
-    <img src="img.png" style="width: auto;" alt="">
+    <img src="img_1.png" style="width: auto;" alt="">
 </p>
 
     Mergesort begynne ved å dele opp arrayet i to, også kalle seg selv rekursivt på de to halvdelene.
