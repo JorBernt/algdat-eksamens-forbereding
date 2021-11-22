@@ -1,6 +1,6 @@
 <h1 align="center">2019 Konte</h1>
 
-#1. Iterasjon, rekursjon, og lenkede lister****
+# 1. Iterasjon, rekursjon, og lenkede lister
 
 ### a.
 
@@ -63,7 +63,7 @@ public static void main(String[] args) {
     
     Dette er fordi listen legger til verdiene fremst, slik første verdi (A) kommer bakerst osv.
 
-#2. Huffmantrær
+# 2. Huffmantrær
 
 ### a.
 i.
