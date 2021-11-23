@@ -147,7 +147,7 @@ i.
 
 <p align="center">
     <img src="img_3.png" style="width: auto;" alt="">
-</p>2
+</p>
 
 ii.
 
@@ -156,4 +156,27 @@ ii.
 
 # 5. 2-3-4 trær (B-tre av orden 4)
 
-    
+### a.
+
+<p align="center">
+    <img src="img_4.png" style="width: auto;" alt="">
+</p>
+
+### b.
+
+<p align="center">
+    <img src="img_5.png" style="width: auto;" alt="">
+</p>
+
+### c.
+
+<p align="center">
+    <img src="img_7.png" style="width: auto;" alt="">
+</p>
+
+
+### d.
+
+    Med 2-3-4 treet fikk vi et perfekt binærsøketre, som det første binærtreet er langt unna å være.
+    Fordelen er at det blir mye færre tall å søke gjennom (færre nivåer).
+
