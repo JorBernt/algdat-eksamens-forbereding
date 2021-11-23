@@ -119,5 +119,41 @@ ii.
 ### c.
 
     Verste tilfelle er hvor algoritmen må gjennomføre mest mulig operasjoner.
-    Beste tilfeller er hvor algoritmen må gjennomføre færrest mulig operasjoner.
+    Beste tilfelle er hvor algoritmen må gjennomføre færrest mulig operasjoner.
 
+# 4. Dijkstras algoritme
+
+### a. 
+
+i.
+
+    For å finne korteste vei mellom to noder i en graf.
+
+ii. 
+```
+   1) Velg en av nodene i grafen som startnode. Sett den som aktiv, dvs. la den få 0 som (svart) avstandsverdi.
+   2) Velg den noden X blant de aktive som har minst avstandsverdi. Finnes det ikke aktive noder, er algoritmen ferdig. Er det flere aktive noder med minst verdi, spiller det ingen rolle hvem av dem vi velger. Sett den valgte noden X som ferdigbehandlet, dvs. skift farge på avstansverdien fra svart til hvit.
+   3) Se på de direkte etterfølgerne til X (de nodene Y som det går en kant til fra X). La sum være avstandsverdien til X + lengden på kanten fra X til Y. a) Hvis Y er ubehandlet, skal den få sum som (svart) avstandsverdi. b) Hvis Y er aktiv og sum er mindre enn dens avstandsverdi, skal den få sum som ny (svart) avstandsverdi. Gå til punkt 2
+```
+
+iii. 
+
+      PriorityQueue (heap)
+   
+
+### b.
+
+i.
+
+<p align="center">
+    <img src="img_3.png" style="width: auto;" alt="">
+</p>2
+
+ii.
+
+    F-I-J-D-B-E-H
+    Lengden er 34
+
+# 5. 2-3-4 trær (B-tre av orden 4)
+
+    
