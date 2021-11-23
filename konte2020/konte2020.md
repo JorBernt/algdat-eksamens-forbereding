@@ -178,7 +178,7 @@
 
     I verste tilfelle velges det minste eller høyeste tallet som pivot for hvert nivå, og partisjonen vil deles opp
     i pivot, og resten i partisjon i størrelse n-1. Om dette skjer for hver eneste partisjon, vil vi ha N partisjoner
-    for N nivåer, og derfor blir det log(N*N) -> log(N^2)
+    for N nivåer, og derfor blir det O(N*N) -> (N^2)
 
 
 # 4. Dobbelt lenket liste
